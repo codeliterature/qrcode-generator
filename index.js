@@ -11,10 +11,19 @@ app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+const folderPath = 'public/images';
+const imagePath = path.join(folderPath, 'img.png'); 
+function deleteImageAfterTime() {
+  setTimeout(() => {
+    if (fs.existsSync(imagePath)) {
+      fs.unlinkSync(imagePath);
+      console.log('Image deleted after a set amount of time.');
+    }
+  }, 15000); 
+}
 
 app.get("/", (req, res) => {
-
+deleteImageAfterTime();
   
   res.render("index")
 });

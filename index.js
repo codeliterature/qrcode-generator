@@ -19,7 +19,7 @@ function deleteImageAfterTime() {
       fs.unlinkSync(imagePath);
       console.log('Image deleted after a set amount of time.');
     }
-  }, 15000); 
+  }, 5000); 
 }
 
 app.get("/", (req, res) => {

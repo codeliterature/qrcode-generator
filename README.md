@@ -5,4 +5,4 @@ We used simple Ejs file for structuring, and minimal CSS for designing.</br>
 By default the pulic directory houses no images, and is instead occupied by a new image generated, after which every subsequent file replaces the older file.</br>
 A function is set to delete the image from server under the specific time, so that no bug remains.</br>
 As our very first project where we use backend.</br>
-Check out our site [here](https://qrgeneratorbycodeliterature.onrender.com/).
+Check out our site [here](https://qrgenereatorbycodeliterature.onrender.com/).
